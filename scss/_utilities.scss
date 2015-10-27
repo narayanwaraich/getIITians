@@ -1,3 +1,28 @@
 .bg-red {
-  background-color: $flat-red;
+	background-color: $flat-red;
+}
+
+.gutter-xs{
+	height: .5rem;
+}
+
+.gutter-sm{
+	height: 2rem;
+}
+
+.gutter-md{
+	height: 5rem;
+}
+
+.gutter-lg{
+	height: 10rem;
+}
+
+.btn-primary {
+	@include button-variant($flat-purple, $white, $flat-purple);
+	&:hover{
+		background-color: $flat-purple;
+		color: $flat-white;
+		border-color: $flat-purple;
+	}
 }

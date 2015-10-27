@@ -1,0 +1,47 @@
+.banner{
+	font-family: 	$font-light;
+	color: 			$flat-purple;
+	font-size: 		4rem;
+	text-align: 	center;
+}
+
+form.indexSearch{
+	button{
+		width: 100%;
+	}
+	small{
+		//color: $black-lightest;
+	}
+	div.col-sm-10{
+		padding-right: 0;
+	}
+	div.col-sm-2{
+		padding-left: 0;
+		.checkbox{
+			font-size: .8rem;
+			.c-input + .c-input{
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+.howitworks{
+	background-color: $flat-red;
+	color: $flat-white;
+	h1{
+		font-family: $font-thin;
+	}
+	h2{
+		color: $white;
+		font-family: $font-light;
+	}
+	p{
+		font-size: .9rem;
+	}
+}
+
+.features{
+	background-color: $white;
+	color: $flat-purple;
+}
