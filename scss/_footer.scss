@@ -1,0 +1,24 @@
+div.jumbotron.doubt{
+	background-color: $flat-purple;
+	color: $flat-white;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+	margin-bottom: 0;
+}
+
+footer{
+	background-color: $flat-purple;
+	color: $flat-white;
+	font-size: .8rem;
+	padding-top: 1rem;
+	hr{
+		margin-top: 0;
+	}
+	ul{
+		li{
+			list-style-type: none;
+			display: inline-block;
+			margin: 0 .5rem;
+		}
+	}
+}

@@ -19,10 +19,59 @@
 }
 
 .btn-primary {
-	@include button-variant($flat-purple, $white, $flat-purple);
+	width: 100%;
+	@include button-variant($flat-purple, transparent, $flat-purple);
 	&:hover{
 		background-color: $flat-purple;
 		color: $flat-white;
 		border-color: $flat-purple;
+	}
+}
+
+.btn-primary-reverse {
+	width: 100%;
+	@include button-variant($flat-white, transparent, $flat-white);
+	&:hover{
+		background-color: $flat-white;
+		color: $flat-purple;
+		border-color: $flat-white;
+	}
+}
+
+.required{
+	color: $flat-red;
+}
+
+.img-responsive-flex{
+	width: 100%;
+	@include img-responsive();
+}
+
+a{
+	color: $flat-navy;
+}
+
+a:hover{
+	color: $flat-blue;
+	text-decoration: none;
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+}
+
+.popover{
+	h3.popover-title{
+		background-color: $flat-purple;
+		color: $flat-white;
+	}
+	div.popover-content{
+		background-color: $flat-white;
+		color: $flat-purple;
+		ul{
+			padding-left: 0;
+			li{
+				list-style-type: none;
+				//border-bottom: 1px solid $white;
+			}
+		}
 	}
 }

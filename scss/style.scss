@@ -20,7 +20,13 @@ body {
 
 	/* Support for IE. */
 	font-feature-settings: 'liga';
+
+	color: $flat-purple;
 }
 
 @import "navbar";
+@import "footer";
+
 @import "index";
+@import "teachers";
+@import "profile";

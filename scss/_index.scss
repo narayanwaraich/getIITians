@@ -6,12 +6,6 @@
 }
 
 form.indexSearch{
-	button{
-		width: 100%;
-	}
-	small{
-		//color: $black-lightest;
-	}
 	div.col-sm-10{
 		padding-right: 0;
 	}
@@ -27,7 +21,7 @@ form.indexSearch{
 }
 
 .howitworks{
-	background-color: $flat-red;
+	background-color: $flat-purple;
 	color: $flat-white;
 	h1{
 		font-family: $font-thin;
@@ -44,4 +38,29 @@ form.indexSearch{
 .features{
 	background-color: $white;
 	color: $flat-purple;
+}
+
+.numbers{
+	color: $flat-purple;
+	div{
+		text-align: center;
+		font-size: 2rem;
+		ul{
+			border-right: 1px solid $white-dark;
+			padding: 0;
+			li{
+				display: inline-block;
+				color: $flat-red;
+				background-color: transparent;
+				border-radius: 3px;
+				border: 1px solid $white-dark;
+				font-size: 3rem;
+				padding: 3px 15px;
+				margin: 0 5px;
+			}
+		}
+		&:last-of-type ul{
+			border-right: none;
+		}
+	}
 }

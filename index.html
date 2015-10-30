@@ -11,8 +11,7 @@
 		<!-- Place favicon.ico in the root directory -->
 
 		<link rel="stylesheet" href="css/style.css">
-		<script src="js/holder.min.js"></script>
-		<script src="js/jssor.slider.min.js"></script>
+		<script src="js/vendor/holder.min.js"></script>
 	</head>
 	<body>
 		<nav class="navbar navbar-light bg-red">
@@ -33,7 +32,7 @@
 						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Teachers</a>
+						<a class="nav-link" href="teachers.html">Teachers</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">About Us</a>
@@ -42,7 +41,7 @@
 						<a class="nav-link" href="#">Enquiry</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Login</a>
+						<a class="nav-link" href="profile.html">Login</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Signup</a>
@@ -50,9 +49,8 @@
 				</ul>
 			</div>
 		</nav>
-		
 		<div class="gutter-md"></div>
-
+		<!-- Header Ends -->
 		<div class="container-fluid">
 			<div class="row banner">
 				<div class="col-sm-7">
@@ -251,66 +249,145 @@
 		</div>
 -->
 
-		<div class="jumbotron jumbotron-fluid">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-xs-12">
-						<div id="index_reviews" style="position: relative; top: 0px; left: 0px; width: 700px; height: 300px;">
-							<!-- Slides Container -->
-							<div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 700px; height: 300px;">
-								<div><img u="image" src="holder.js/300x500/auto/#555:#333/text:Third slide" /></div>
-								<div><img u="image" src="holder.js/300x500/auto/#555:#333/text:Third slide" /></div>
-							</div>
-						</div>
-					</div>					
+		<div class="container-fluid">
+			<div class="row numbers">
+				<div class="col-xs-4">
+					Teachers
+					<ul class="count" data-count="86">
+						<li>8</li>
+						<li>6</li>
+					</ul>
+				</div>
+				<div class="col-xs-4">
+					Students
+					<ul class="count" data-count="87">
+						<li>8</li>
+						<li>7</li>
+					</ul>
+				</div>
+				<div class="col-xs-4">
+					Topics
+					<ul class="count" data-count="770">
+						<li>7</li>
+						<li>7</li>
+						<li>0</li>
+					</ul>
 				</div>
 			</div>
 		</div>
+		<!-- Footer Begins -->
+		<div class="gutter-md"></div>
+		<div class="jumbotron jumbotron-fluid doubt">
+			<div class="container-fluid">
+				<h1>Have a doubt ?</h1>
+				<div class="gutter-sm"></div>
+				<form class="row">
+					<div class="col-xs-4">
+						<div class="form-group row">
+							<label for="class" class="col-sm-3 form-control-label">Class</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" id="class" placeholder="Class">
+							</div>
+						</div>
+						<div class="gutter-xs"></div>
+						<div class="form-group row">
+							<label for="subject" class="col-sm-3 form-control-label">Subject</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" id="subject" placeholder="Subject">
+							</div>
+						</div>
+						<div class="gutter-xs"></div>
+						<div class="form-group row">
+							<label for="topic" class="col-sm-3 form-control-label">Topic</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" id="topic" placeholder="Topic">
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="form-group row">
+							<label for="enquiry" class="col-sm-3 form-control-label">Enquiry<span class="required">&nbsp;*&nbsp;</span></label>
+							<div class="col-sm-9">
+								<textarea class="form-control" id="enquiry" rows="5"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="form-group row">
+							<label for="email" class="col-sm-3 form-control-label">Email<span class="required">&nbsp;*&nbsp;</span></label>
+							<div class="col-sm-9">
+								<input type="email" class="form-control" id="email" placeholder="Email">
+							</div>
+						</div>
+						<div class="gutter-xs"></div>
+						<div class="form-group row">
+							<label for="phone" class="col-sm-3 form-control-label">Phone</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" id="phone" placeholder="Phone">
+							</div>
+						</div>
+						<div class="gutter-xs"></div>
+						<div class="form-group row">
+							<label for="topic" class="col-sm-3 form-control-label"></label>
+							<div class="col-sm-9">
+								<button type="submit" class="btn btn-primary-reverse">Submit</button>
+								<small class="text-muted"><span class="required">&nbsp;*&nbsp;</span> Starred fields are compulsory</small>
 
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<footer>
+			<hr>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-3">
+						Copyright &copy; getIITians.com
+					</div>
+					<div class="col-xs-5">
+						<ul>
+							<li>
+								<a href="">Home</a>
+							</li>
+							<li>
+								<a href="">About Us</a>
+							</li>
+							<li>
+								<a href="">Site Map</a>
+							</li>
+							<li>
+								<a href="">Privacy Policy</a>
+							</li>
+							<li>
+								<a href="">Terms &amp; Conditions</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-4">
+						<span class="pull-right">Social icons</span>
+					</div>
+				</div>
+			</div>
+		</footer>
 
-		<script src="js/jquery-2.1.4.min.js"></script>
-		<script src="js/holder.min.js"></script>
-		<script src="js/jssor.slider.min.js"></script>
+		<script src="js/vendor/jquery-2.1.4.min.js"></script>
+		<script src="js/helpers.js"></script>
 
-		<script>
-			jQuery(document).ready(function ($) {
-				var options = { $AutoPlay: true };
-				var jssor_slider1 = new $JssorSlider$('index_reviews', options);
+		<script src="js/index.js"></script>
 
-				//responsive code begin
-				//you can remove responsive code if you don't want the slider scales
-				//while window resizes
-				function ScaleSlider() {
-				var parentWidth = $('#slider1_container').parent().width();
-				if (parentWidth) {
-				jssor_slider1.$ScaleWidth(parentWidth);
-				}
-				else
-				window.setTimeout(ScaleSlider, 30);
-				}
-				//Scale slider after document ready
-				ScaleSlider();
-
-				//Scale slider while window load/resize/orientationchange.
-				$(window).bind("load", ScaleSlider);
-				$(window).bind("resize", ScaleSlider);
-				$(window).bind("orientationchange", ScaleSlider);
-				//responsive code end
-
-			});
-		</script>
-
-		<script src="js/bootstrap/alert.js"></script>
-		<script src="js/bootstrap/button.js"></script>
-		<script src="js/bootstrap/carousel.js"></script>
-		<script src="js/bootstrap/collapse.js"></script>
-		<script src="js/bootstrap/dropdown.js"></script>
-		<script src="js/bootstrap/modal.js"></script>
-		<script src="js/bootstrap/tooltip.js"></script>
-		<script src="js/bootstrap/popover.js"></script>
-		<script src="js/bootstrap/scrollspy.js"></script>
-		<script src="js/bootstrap/tab.js"></script>
-		<script src="js/bootstrap/util.js"></script>
+		<script src="js/vendor/bootstrap/alert.js"></script>
+		<script src="js/vendor/bootstrap/button.js"></script>
+		<script src="js/vendor/bootstrap/carousel.js"></script>
+		<script src="js/vendor/bootstrap/collapse.js"></script>
+		<script src="js/vendor/bootstrap/dropdown.js"></script>
+		<script src="js/vendor/bootstrap/modal.js"></script>
+		<script src="js/vendor/bootstrap/tooltip.js"></script>
+		<script src="js/vendor/bootstrap/popover.js"></script>
+		<script src="js/vendor/bootstrap/scrollspy.js"></script>
+		<script src="js/vendor/bootstrap/tab.js"></script>
+		<script src="js/vendor/bootstrap/util.js"></script>
 
 			<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></'
 + 'script>')</script>
