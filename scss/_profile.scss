@@ -14,6 +14,7 @@
 		}
 		.list-group{
 			.list-group-item{
+				font-size: 1.1rem;
 				color: $flat-navy;
 				background-color: $flat-white;
 				border-right: 0;
@@ -26,6 +27,9 @@
 					border-bottom: 0;
 				}
 			}
+			.active{
+				color: $flat-purple;
+			}
 		}
 	}
 	main{
@@ -35,7 +39,7 @@
 			margin-right: 0;
 		}
 		#messageTeacher{
-			font-size: .9rem;
+			font-size: 1rem;
 			padding: 1rem;
 			background-color: $flat-purple;
 			color: $flat-white;
@@ -64,9 +68,9 @@
 		table{
 			width: 100%;
 			max-width: 100%;
-			font-family: $font-light;
+			font-family: $font-regular;
 			thead{
-				font-size: 1.2rem;
+				font-size: 1.4rem;
 				border-left: 1px solid $flat-purple;
 				border-right: 1px solid $flat-purple;
 				th{
@@ -75,18 +79,19 @@
 					border-left:1px solid $flat-white;
 					background-color: $flat-purple;
 					color: $flat-white;
-					font-family: $font-thin;
+					font-family: $font-light;
+					font-weight: normal;
 					&:first-child{
 						border-left: 0;
 					}
 				}
 			}
 			tbody{
-				font-size: 1.5rem;
+				font-size: 1.8rem;
 				border-left: 1px solid $flat-purple;
 				border-top: 1px solid $flat-purple;
 				ul{
-					font-size: .8rem;
+					font-size: 1rem;
 					padding-left: 0;
 					margin-bottom: 0;
 					float: right;
@@ -126,6 +131,83 @@
 				border: 1px solid $flat-white;
 				&:hover{
 					background-color: darken($flat-white, 10%);
+				}
+			}
+		}
+	}
+	.reviews{
+		.media{
+			margin-bottom: 3rem;
+		}
+		p{
+			margin-bottom: .5rem;
+		}
+	}
+	.classes{
+		table{
+			width: 100%;
+			td,th{
+				border: 1px solid darken($flat-white, 10%);
+				padding: .3rem .5rem;
+			}
+			th{
+				font-family: $font-light;
+				font-weight: normal;
+				background-color: $flat-purple;
+				color: $flat-white;
+				font-size: 1.2rem;
+			}
+		}
+		button{
+			width: auto;
+			padding: .1rem 1rem;
+			font-size: 1rem;
+		}
+	}
+	.messages{
+		.names,.chat{
+			height: 30rem;
+			max-height: 30rem;
+		}
+		.names{
+			overflow-y: scroll;
+			ul{
+				overflow: auto;
+				li{
+					background-color: $flat-white;
+					border-color: $flat-purple;
+					color: $flat-purple;
+					font-size: 1.1rem;
+					&.active{
+						background-color: $flat-purple;
+						color: $flat-white;
+					}
+					&:hover{
+						cursor: pointer;
+						background-color: $flat-purple;
+						color: $flat-white;
+					}
+				}
+			}
+		}
+		.chat{
+			border: 1px solid $flat-purple;
+			overflow-y: scroll;
+			padding-left: 0;
+			button{
+				margin-top: 2rem;
+			}
+			.chat-data{
+				padding: 1rem;
+				.single-message{
+					padding: 1rem;
+					border-radius: 5px;
+					border: 1px solid darken($flat-white, 10%);
+					margin-bottom: .5rem;
+					background-color: lighten($flat-white, 2%);
+				}
+				.other{
+					margin-left: 1rem;
 				}
 			}
 		}

@@ -58,6 +58,11 @@ a:hover{
 	transition-duration: 0.2s;
 }
 
+button:hover{
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+}
+
 .popover{
 	h3.popover-title{
 		background-color: $flat-purple;

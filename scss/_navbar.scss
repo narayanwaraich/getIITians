@@ -6,7 +6,6 @@
 	.navbar-nav {
 		.nav-link {
 			font-family: $font-regular;
-			font-size: .9rem;
 			color: $navbar-light-color;
 
 			@include hover-focus {

@@ -63,63 +63,72 @@
 							<a href="#" class="list-group-item">REQUEST CLASS</a>
 							<a href="schedule.html" class="list-group-item">Schedule</a>
 							<a href="subjects.html" class="list-group-item">Subjects</a>
-							<a href="reviews.html" class="list-group-item active">Reviews</a>
-							<a href="classes.html" class="list-group-item">Classes</a>
+							<a href="reviews.html" class="list-group-item">Reviews</a>
+							<a href="classes.html" class="list-group-item active">Classes</a>
 							<a href="messages.html" class="list-group-item">Messages</a>
 						</div>
 					</aside>
-					<main class="col-xs-10 reviews">
+					<main class="col-xs-10 classes">
 						<div class="row">
 							<div class="col-xs-12">
-								<div class="media">
-									<div class="media-left">
-										<i class="material-icons md-60">format_quote</i>
+								<ul class="nav nav-tabs" role="tablist">
+									<li class="nav-item">
+										<a href="upcoming" class="nav-link active" role="tab" data-toggle="tab">Upcoming</a>
+									</li>
+									<li class="nav-item">
+										<a href="previous" class="nav-link" role="tab" data-toggle="tab">Previous</a>
+									</li>
+								</ul>
+								<div class="gutter-sm"></div>
+								<div class="tab-content">
+									<div role="tabpanel" class="tab-pane fade in active" id="upcoming">
+										<table>
+											<thead>
+												<tr>
+													<th>Class</th>
+													<th>Subject</th>
+													<th>Topic</th>
+													<th>Date</th>
+													<th>Time</th>
+													<th>Duration</th>
+													<th>Student</th>
+													<th></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Class X</td>
+													<td>Mathematics</td>
+													<td>Circles</td>
+													<td>Wed, 28 Oct</td>
+													<td>6:00 PM</td>
+													<td>1 Hour</td>
+													<td><a href="">Yogesh Saini</a></td>
+													<td>
+														<button type="submit" class="btn btn-primary">Start</button>
+														<button type="submit" class="btn btn-primary">Cancel</button>
+														<button type="submit" class="btn btn-primary">Reschedule</button>
+													</td>
+												</tr>
+												<tr>
+													<td>IIT JEE</td>
+													<td>Chemistry</td>
+													<td>Covalent Bonds</td>
+													<td>Mon, 3 Nov</td>
+													<td>7:30 PM</td>
+													<td>1:30 Hour</td>
+													<td><a href="">Narayan Waraich</a></td>
+													<td>
+														<button type="submit" class="btn btn-primary">Confirm</button>
+														<button type="submit" class="btn btn-primary">Cancel</button>
+														<button type="submit" class="btn btn-primary">Reschedule</button>
+													</td>
+												</tr>
+											</tbody>
+										</table>
 									</div>
-									<div class="media-body">
-										<h4 class="media-heading">Knowledgable &amp; patient tutor -</h4>
-										<i>Gaurav jain, Guwahati on 21/8/2015</i>
-										<div class="clearfix"></div>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat ultricies urna, ac accumsan nulla tristique sit amet. Mauris lobortis posuere leo, sit amet efficitur turpis efficitur ac. In at tristique ipsum. Sed lobortis odio eget sapien mollis viverra. Nullam semper purus et sapien rhoncus porta.
-										<div class="gutter-xs"></div>
-										<p>
-											Was this review helpful ?
-											<i class="material-icons">thumbs_up</i>
-											<i class="material-icons">thumbs_down</i>
-										</p>
-										<small>14 of 17 users found this review helpful.</small>
-									</div>
-								</div>
-								<div class="media">
-									<div class="media-left">
-										<i class="material-icons md-60">format_quote</i>
-									</div>
-									<div class="media-body">
-										<h4 class="media-heading">Knowledgable &amp; patient tutor -</h4>
-										<i>Gaurav jain, Guwahati on 21/8/2015</i>
-										<div class="clearfix"></div>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat ultricies urna, ac accumsan nulla tristique sit amet. Mauris lobortis posuere leo, sit amet efficitur turpis efficitur ac. In at tristique ipsum. Sed lobortis odio eget sapien mollis viverra. Nullam semper purus et sapien rhoncus porta.
-									</div>
-								</div>
-								<div class="media">
-									<div class="media-left">
-										<i class="material-icons md-60">format_quote</i>
-									</div>
-									<div class="media-body">
-										<h4 class="media-heading">Knowledgable &amp; patient tutor -</h4>
-										<i>Gaurav jain, Guwahati on 21/8/2015</i>
-										<div class="clearfix"></div>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat ultricies urna, ac accumsan nulla tristique sit amet. Mauris lobortis posuere leo, sit amet efficitur turpis efficitur ac. In at tristique ipsum. Sed lobortis odio eget sapien mollis viverra. Nullam semper purus et sapien rhoncus porta.
-									</div>
-								</div>
-								<div class="media">
-									<div class="media-left">
-										<i class="material-icons md-60">format_quote</i>
-									</div>
-									<div class="media-body">
-										<h4 class="media-heading">Knowledgable &amp; patient tutor -</h4>
-										<i>Gaurav jain, Guwahati on 21/8/2015</i>
-										<div class="clearfix"></div>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat ultricies urna, ac accumsan nulla tristique sit amet. Mauris lobortis posuere leo, sit amet efficitur turpis efficitur ac. In at tristique ipsum. Sed lobortis odio eget sapien mollis viverra. Nullam semper purus et sapien rhoncus porta.
+									<div role="tabpanel" class="tab-pane fade" id="previous">
+										769876875987598
 									</div>
 								</div>
 							</div>
