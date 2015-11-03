@@ -44,12 +44,87 @@
 						<a class="nav-link" href="profile.html">Login</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Signup</a>
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#signup">Signup</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 		<div class="gutter-md"></div>
+
+
+		<div class="modal fade" id="signup" tabindex="-1" aria-labelledby="signupLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+							<span class="sr-only">Close</span>
+						</button>
+						<h2 class="modal-title text-center">Signup</h2>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-xs-offset-2 col-xs-8">
+								<a class="oauth" href="">facebook</a><a href="" class="pull-right oauth">google</a>
+							</div>
+							<form class="col-xs-offset-2 col-xs-8">
+								<fieldset class="form-group">
+									<label class="sr-only" for="name">Full name</label>
+									<div class="input-group">
+										<div class="input-group-addon">Full name</div>
+										<input type="text" class="form-control" id="name" placeholder="Full name">
+									</div>
+								</fieldset>
+								<fieldset class="form-group">
+									<label class="sr-only" for="email">Email address</label>
+									<div class="input-group">
+										<div class="input-group-addon">Email address</div>
+										<input type="email" class="form-control" id="email" placeholder="Enter email">
+									</div>
+									<small class="text-muted">We'll never share your email with anyone else.</small>
+								</fieldset>
+								<fieldset class="form-group">
+									<label class="sr-only" for="password">Password</label>
+									<div class="input-group">
+										<div class="input-group-addon">Password</div>
+										<input type="password" class="form-control" id="password" placeholder="Password">
+									</div>
+								</fieldset>
+								<fieldset class="form-group">
+									<label class="sr-only" for="password">Password repeat</label>
+									<div class="input-group">
+										<div class="input-group-addon">Password repeat</div>
+										<input type="password" class="form-control" id="password" placeholder="Repeat password">
+									</div>
+								</fieldset>
+								<div class="radio">
+									Sign up as : 
+									<label class="radio-inline">
+										<input type="radio" name="signuptype" id="signuptype" value="student"> Student
+									</label>
+									<label class="radio-inline">
+										<input type="radio" name="signuptype" id="signuptype" value="teacher"> Teacher
+									</label>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<div class="row">
+							<div class="col-xs-offset-3 col-xs-6">
+								<button type="button" class="btn btn-primary">SUBMIT</button>
+								<small class="text-muted text-left">By clicking on submit, you agree to our terms of use.</small>
+							</div>
+						</div>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+
+
+
+
 		<!-- Header Ends -->
 		<div class="container-fluid">
 			<div class="row banner">

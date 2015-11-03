@@ -4740,6 +4740,9 @@ button:hover {
     .popover div.popover-content ul li {
       list-style-type: none; }
 
+hr.purple {
+  border-color: #2C3E50; }
+
 body {
   font-family: "robotoregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* Support for all WebKit browsers. */
@@ -4970,6 +4973,19 @@ form.indexSearch div.col-sm-2 {
       color: #ECF0F1; }
     #profile main .media-body h4 {
       display: inline-block; }
+    #profile main .incomplete {
+      background-color: #f29f97;
+      padding: .5rem 1rem;
+      border-radius: 5px;
+      margin-bottom: 1rem; }
+      #profile main .incomplete p {
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 0; }
+      #profile main .incomplete i {
+        vertical-align: middle; }
+      #profile main .incomplete a {
+        color: #233140; }
   #profile .schedule h2 {
     font-family: "robotomedium", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   #profile .schedule i.material-icons {
@@ -5035,6 +5051,20 @@ form.indexSearch div.col-sm-2 {
     margin-bottom: 3rem; }
   #profile .reviews p {
     margin-bottom: .5rem; }
+  #profile .classes .nav-tabs {
+    border-color: transparent; }
+    #profile .classes .nav-tabs .nav-link {
+      background-color: #ECF0F1;
+      border-color: #2C3E50;
+      border-radius: 0; }
+    #profile .classes .nav-tabs .active {
+      border-color: #2C3E50 #2C3E50 transparent; }
+    #profile .classes .nav-tabs .nav-item {
+      width: 50%;
+      text-align: center; }
+    #profile .classes .nav-tabs .nav-item + .nav-item {
+      margin: 0;
+      border-left-color: transparent; }
   #profile .classes table {
     width: 100%; }
     #profile .classes table td, #profile .classes table th {
@@ -5085,5 +5115,264 @@ form.indexSearch div.col-sm-2 {
         background-color: #f2f5f5; }
       #profile .messages .chat .chat-data .other {
         margin-left: 1rem; }
+  #profile .class .calendar {
+    margin-left: 0;
+    margin-right: 0;
+    border-right: 1px solid #2C3E50;
+    border-bottom: 1px solid #2C3E50; }
+    #profile .class .calendar:before, #profile .class .calendar:after {
+      content: " ";
+      display: table; }
+    #profile .class .calendar:after {
+      clear: both; }
+    #profile .class .calendar .cell {
+      position: relative;
+      float: left;
+      min-height: 1px;
+      padding-left: 0;
+      padding-right: 0;
+      width: 14.28571%;
+      border-left: 1px solid #2C3E50;
+      border-top: 1px solid #2C3E50;
+      text-align: center;
+      cursor: pointer;
+      padding: .95rem .5rem;
+      font-size: 1.1rem;
+      margin: 0; }
+      #profile .class .calendar .cell.blocked {
+        color: #BBBBBB;
+        cursor: not-allowed; }
+      #profile .class .calendar .cell.heading {
+        background-color: #2C3E50;
+        color: #ECF0F1;
+        border-color: #1a252f; }
+    #profile .class .calendar input[type="checkbox"]:checked + label {
+      background-color: #E74C3C;
+      color: #ECF0F1;
+      transition: background .15s ease-in-out; }
+  #profile .class .timeslot {
+    margin-left: 0;
+    margin-right: 0;
+    border-right: 1px solid #2C3E50;
+    border-bottom: 1px solid #2C3E50; }
+    #profile .class .timeslot:before, #profile .class .timeslot:after {
+      content: " ";
+      display: table; }
+    #profile .class .timeslot:after {
+      clear: both; }
+    #profile .class .timeslot .time {
+      position: relative;
+      float: left;
+      min-height: 1px;
+      padding-left: 0;
+      padding-right: 0;
+      width: 25%;
+      border-left: 1px solid #2C3E50;
+      border-top: 1px solid #2C3E50;
+      text-align: center;
+      cursor: pointer;
+      padding: .3rem .5rem;
+      font-size: 1rem;
+      margin: 0; }
+      #profile .class .timeslot .time.available {
+        color: #ECF0F1;
+        background-color: #2980B9; }
+      #profile .class .timeslot .time.booked {
+        color: #ECF0F1;
+        background-color: #2C3E50;
+        cursor: not-allowed; }
+    #profile .class .timeslot input[type="checkbox"]:checked + label {
+      background-color: #E74C3C;
+      color: #ECF0F1;
+      transition: background .15s ease-in-out; }
+    #profile .class .timeslot div.col-xs-4 {
+      background-color: #2980B9;
+      color: #ECF0F1;
+      border: 1px solid #1a252f;
+      border-bottom: 0;
+      border-right: 0;
+      font-size: 1.4rem;
+      font-family: "robotolight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      text-align: center; }
+      #profile .class .timeslot div.col-xs-4:nth-child(2) {
+        background-color: #2C3E50; }
+      #profile .class .timeslot div.col-xs-4:nth-child(3) {
+        background-color: #ECF0F1;
+        color: #2C3E50; }
+  #profile .class .message p:first-child {
+    font-size: 2rem;
+    font-family: "robotothin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    padding: .2rem 1rem;
+    margin-bottom: 0; }
+  #profile .class .message p:last-child {
+    border: 1px solid #2C3E50;
+    padding: 1rem;
+    font-size: 1.1rem; }
+  #profile .class .details p {
+    font-size: 1.1rem; }
+  #profile .class .details b {
+    font-family: "robotomedium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1.4rem; }
+  #profile .class .details button {
+    width: auto;
+    font-size: 3rem;
+    font-family: "robotobold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 1rem 3rem; }
+  #profile .signup h2 {
+    display: inline-block; }
+  #profile .signup .sections a {
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    padding: 1.2rem 2rem;
+    border-radius: 2px; }
+    #profile .signup .sections a span {
+      font-size: 3rem;
+      vertical-align: middle;
+      margin-right: 1rem; }
+  #profile .signup h5 {
+    font-family: "robotolight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal; }
+  #profile .signup .signupsubjects .price label {
+    float: right;
+    padding: .2rem .5rem;
+    border: 1px solid #2C3E50;
+    margin-right: 1rem;
+    cursor: pointer; }
+  #profile .signup .signupsubjects .price input[type="radio"]:checked + label.five {
+    background-color: #FFF; }
+  #profile .signup .signupsubjects .price input[type="radio"]:checked + label.eight {
+    background-color: #CCC;
+    border-color: #CCC; }
+  #profile .signup .signupsubjects .price input[type="radio"]:checked + label.ten {
+    background-color: #999;
+    color: #ECF0F1;
+    border-color: #999; }
+  #profile .signup .signupsubjects .price input[type="radio"]:checked + label.twelve {
+    background-color: #666;
+    color: #ECF0F1;
+    border-color: #666; }
+  #profile .signup .signupsubjects .price input[type="radio"]:checked + label.fifteen {
+    background-color: #333;
+    color: #ECF0F1;
+    border-color: #333; }
+  #profile .signup .signupsubjects .price input[type="radio"]:checked + label.twenty {
+    background-color: #000;
+    color: #ECF0F1;
+    border-color: #000; }
+  #profile .signup .signupsubjects .subject {
+    border-right: 1px solid #2C3E50;
+    border-bottom: 1px solid #2C3E50; }
+    #profile .signup .signupsubjects .subject label {
+      position: relative;
+      float: left;
+      min-height: 1px;
+      padding-left: 0;
+      padding-right: 0;
+      width: 25%;
+      border-left: 1px solid #2C3E50;
+      border-top: 1px solid #2C3E50;
+      text-align: center;
+      cursor: pointer;
+      padding: .3rem .5rem;
+      font-size: 1rem;
+      margin: 0; }
+      #profile .signup .signupsubjects .subject label.five {
+        background-color: #FFF; }
+      #profile .signup .signupsubjects .subject label.eight {
+        background-color: #CCC;
+        border-color: #CCC; }
+      #profile .signup .signupsubjects .subject label.ten {
+        background-color: #999;
+        color: #ECF0F1;
+        border-color: #999; }
+      #profile .signup .signupsubjects .subject label.twelve {
+        background-color: #666;
+        color: #ECF0F1;
+        border-color: #666; }
+      #profile .signup .signupsubjects .subject label.fifteen {
+        background-color: #333;
+        color: #ECF0F1;
+        border-color: #333; }
+      #profile .signup .signupsubjects .subject label.twenty {
+        background-color: #000;
+        color: #ECF0F1;
+        border-color: #000; }
+  #profile .signup .signupcalendar .timeslot {
+    margin-left: 0;
+    margin-right: 0;
+    border-right: 1px solid #2C3E50;
+    border-bottom: 1px solid #2C3E50; }
+    #profile .signup .signupcalendar .timeslot:before, #profile .signup .signupcalendar .timeslot:after {
+      content: " ";
+      display: table; }
+    #profile .signup .signupcalendar .timeslot:after {
+      clear: both; }
+    #profile .signup .signupcalendar .timeslot .time {
+      position: relative;
+      float: left;
+      min-height: 1px;
+      padding-left: 0;
+      padding-right: 0;
+      width: 25%;
+      border-left: 1px solid #2C3E50;
+      border-top: 1px solid #2C3E50;
+      text-align: center;
+      cursor: pointer;
+      padding: .3rem .5rem;
+      font-size: 1rem;
+      margin: 0; }
+    #profile .signup .signupcalendar .timeslot input[type="checkbox"]:checked + label {
+      background-color: #E74C3C;
+      color: #ECF0F1;
+      transition: background .15s ease-in-out; }
+  #profile .signup .signupcalendar .days {
+    margin-left: 0;
+    margin-right: 0;
+    border-right: 1px solid #2C3E50;
+    border-bottom: 1px solid #2C3E50; }
+    #profile .signup .signupcalendar .days:before, #profile .signup .signupcalendar .days:after {
+      content: " ";
+      display: table; }
+    #profile .signup .signupcalendar .days:after {
+      clear: both; }
+    #profile .signup .signupcalendar .days .day {
+      position: relative;
+      float: left;
+      min-height: 1px;
+      padding-left: 0;
+      padding-right: 0;
+      width: 14.28571%;
+      border-left: 1px solid #2C3E50;
+      border-top: 1px solid #2C3E50;
+      text-align: center;
+      cursor: pointer;
+      padding: .3rem .5rem;
+      font-size: 1rem;
+      margin: 0; }
+    #profile .signup .signupcalendar .days input[type="checkbox"]:checked + label {
+      background-color: #E74C3C;
+      color: #ECF0F1;
+      transition: background .15s ease-in-out; }
+
+#signup a.oauth {
+  display: inline-block;
+  background-color: #2C3E50;
+  color: #ECF0F1;
+  padding: 0 2rem;
+  font-size: 2rem;
+  font-family: "robotomedium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-radius: 2px;
+  margin-bottom: 1rem; }
+#signup .input-group {
+  width: 100%; }
+#signup .input-group-addon {
+  background-color: #2C3E50;
+  color: #ECF0F1;
+  border-color: #2C3E50;
+  width: 35%; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,103 @@
+											<table class="col-xs-12 calendar">
+												<thead>
+													<tr>
+														<th>M</th>
+														<th>T</th>
+														<th>W</th>
+														<th>T</th>
+														<th>F</th>
+														<th>S</th>
+														<th>S</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="blocked">26</td>
+														<td class="blocked">27</td>
+														<td class="blocked">28</td>
+														<td class="blocked">29</td>
+														<td class="blocked">30</td>
+														<td class="blocked">31</td>
+														<td>1</td>
+													</tr>
+													<tr>
+														<td>2</td>
+														<td>3</td>
+														<td>4</td>
+														<td>5</td>
+														<td>6</td>
+														<td>7</td>
+														<td>8</td>
+													</tr>
+													<tr>
+														<td>9</td>
+														<td>10</td>
+														<td>11</td>
+														<td>12</td>
+														<td>13</td>
+														<td>14</td>
+														<td>15</td>
+													</tr>
+													<tr>
+														<td>16</td>
+														<td>17</td>
+														<td>18</td>
+														<td>19</td>
+														<input type="checkbox" id="20nov">
+														<td><label for="20nov">20</label></td>
+														<td>21</td>
+														<td>22</td>
+													</tr>
+													<tr>
+														<td>23</td>
+														<td>24</td>
+														<td>25</td>
+														<td>26</td>
+														<td>27</td>
+														<td>28</td>
+														<td>29</td>
+													</tr>
+													<tr>
+														<td>30</td>
+														<td class="blocked">1</td>
+														<td class="blocked">2</td>
+														<td class="blocked">3</td>
+														<td class="blocked">4</td>
+														<td class="blocked">5</td>
+														<td class="blocked">6</td>
+													</tr>
+												</tbody>
+											</table>
+
+
+		table.calendar{
+			th,td{
+				text-align: center;
+				border: 1px solid $flat-purple;
+			}
+			th{
+				font-family: $font-light;
+				font-weight: normal;
+				background-color: $flat-purple;
+				color: $flat-white;
+				border-color: darken($flat-purple, 10%);
+			}
+			td{
+				cursor: pointer;
+				label{
+					margin: 0;
+					padding: 5px;
+					cursor: pointer;
+				}
+			}
+			td.blocked{
+				color: $white-darker;
+				cursor: not-allowed;
+			}
+			input[type="checkbox"]:checked ~ td {
+				background-color: $flat-purple;
+				color: $flat-white;
+			}
+		}
+
+
