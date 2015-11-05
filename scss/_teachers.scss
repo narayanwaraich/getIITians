@@ -115,37 +115,41 @@
 	main{
 		border-top: 1px solid $white-darker;
 		padding-top: 1rem;
-		.card{
-			div.row{
-				div:first-child{
-					padding-right: 5px;
-				}
-				div:last-child{
-					padding-left: 0;
+	}
+	.teacher{
+		margin-bottom: 2rem;
+		img{
+			width: 40%;
+			float: left;
+			margin-right: .5rem;
+			margin-bottom: .5rem;
+		}
+		h4{
+			margin-bottom: 0;
+		}
+		hr{
+			margin: 0;
+		}
+		p{
+			font-size: .9rem;
+			margin-bottom: 0;
+			i{
+				vertical-align: middle;
+			}
+			span{
+				vertical-align: middle;
+				small{
+					padding-right: .5rem;
+					margin-right: .5rem;
+					border-right: 1px solid $white-darker;
 				}
 			}
-			.card-block{
-				padding-top: 0;
-				padding-bottom: 0;
-				h4{
-					margin-bottom: 0;
-				}
-				hr{
-					margin: 0;
-				}
-				p.card-text{
-					font-size: .85rem;
-					margin-bottom: 0;
-					&.footer{
-						font-size: .8rem;
-						display: inline-block;
-						padding: 0 .1rem;
-						&:last-child{
-							border-left: 1px solid $white-darker;
-						}
-					}
-				}
+			&.footer{
+				margin-bottom: .5rem;
 			}
+		}
+		a.btn{
+			width: 49%;
 		}
 	}
 }

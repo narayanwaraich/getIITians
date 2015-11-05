@@ -4743,6 +4743,29 @@ button:hover {
 hr.purple {
   border-color: #2C3E50; }
 
+.hide {
+  display: none; }
+
+.alert-red {
+  background-color: #f5b4ae;
+  border-color: transparent;
+  color: #2C3E50;
+  padding: .5rem 1rem;
+  border-radius: 1px;
+  margin-bottom: 1rem; }
+  .alert-red i {
+    vertical-align: middle; }
+  .alert-red p {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+    margin-left: .5rem; }
+  .alert-red a {
+    color: #233140; }
+  .alert-red .close {
+    right: 0;
+    top: 0; }
+
 body {
   font-family: "robotoregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* Support for all WebKit browsers. */
@@ -4753,7 +4776,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* Support for IE. */
   font-feature-settings: 'liga';
-  color: #2C3E50; }
+  color: #2C3E50;
+  outline: 0; }
 
 .navbar-light .navbar-brand {
   padding: 0; }
@@ -4783,12 +4807,41 @@ footer {
     list-style-type: none;
     display: inline-block;
     margin: 0 .5rem; }
+  @media (max-width: 33.9em) {
+    footer div[class*="col-sm"] {
+      margin-bottom: 1rem;
+      text-align: center;
+      font-size: .85rem; }
+    footer ul {
+      padding-left: 0; }
+      footer ul li:first-child {
+        margin-left: 0; } }
 
-.banner {
+.banner p {
   font-family: "robotolight", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #2C3E50;
   font-size: 4rem;
   text-align: center; }
+.banner form div.col-sm-8 {
+  padding-right: 0; }
+  .banner form div.col-sm-8 small {
+    font-size: .8rem; }
+.banner form div.col-sm-4 {
+  padding-left: 0; }
+  .banner form div.col-sm-4 .checkbox {
+    font-size: .75rem; }
+    .banner form div.col-sm-4 .checkbox .c-input + .c-input {
+      margin-left: .3rem; }
+@media (max-width: 33.9em) {
+  .banner p {
+    font-size: 2rem;
+    font-family: "robotoregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    margin-top: 1rem; }
+  .banner .gutter-md {
+    height: 2rem; }
+  .banner .c-input + .c-input {
+    margin-left: 3rem; } }
 
 form.indexSearch div.col-sm-10 {
   padding-right: 0; }
@@ -4798,6 +4851,9 @@ form.indexSearch div.col-sm-2 {
     font-size: .8rem; }
     form.indexSearch div.col-sm-2 .checkbox .c-input + .c-input {
       margin-left: 0; }
+@media (max-width: 33.9em) {
+  form.indexSearch label.c-input {
+    margin-left: 1rem; } }
 
 .howitworks {
   background-color: #2C3E50;
@@ -4809,6 +4865,9 @@ form.indexSearch div.col-sm-2 {
     font-family: "robotolight", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .howitworks p {
     font-size: .9rem; }
+  @media (max-width: 33.9em) {
+    .howitworks h1.display-3 {
+      font-size: 3rem; } }
 
 .features {
   background-color: #FFFFFF;
@@ -4833,6 +4892,15 @@ form.indexSearch div.col-sm-2 {
         margin: 0 5px; }
     .numbers div:last-of-type ul {
       border-right: none; }
+  @media (max-width: 33.9em) {
+    .numbers div {
+      font-size: 1.5rem; }
+      .numbers div ul {
+        border: 0; }
+        .numbers div ul li {
+          font-size: 1.2rem;
+          padding: 3px 6px;
+          margin: 0 1px; } }
 
 #teachers section .col-sm-offset-4 h3 {
   display: inline-block;
@@ -4915,26 +4983,32 @@ form.indexSearch div.col-sm-2 {
 #teachers main {
   border-top: 1px solid #BBBBBB;
   padding-top: 1rem; }
-  #teachers main .card div.row div:first-child {
-    padding-right: 5px; }
-  #teachers main .card div.row div:last-child {
-    padding-left: 0; }
-  #teachers main .card .card-block {
-    padding-top: 0;
-    padding-bottom: 0; }
-    #teachers main .card .card-block h4 {
-      margin-bottom: 0; }
-    #teachers main .card .card-block hr {
-      margin: 0; }
-    #teachers main .card .card-block p.card-text {
-      font-size: .85rem;
-      margin-bottom: 0; }
-      #teachers main .card .card-block p.card-text.footer {
-        font-size: .8rem;
-        display: inline-block;
-        padding: 0 .1rem; }
-        #teachers main .card .card-block p.card-text.footer:last-child {
-          border-left: 1px solid #BBBBBB; }
+#teachers .teacher {
+  margin-bottom: 2rem; }
+  #teachers .teacher img {
+    width: 40%;
+    float: left;
+    margin-right: .5rem;
+    margin-bottom: .5rem; }
+  #teachers .teacher h4 {
+    margin-bottom: 0; }
+  #teachers .teacher hr {
+    margin: 0; }
+  #teachers .teacher p {
+    font-size: .9rem;
+    margin-bottom: 0; }
+    #teachers .teacher p i {
+      vertical-align: middle; }
+    #teachers .teacher p span {
+      vertical-align: middle; }
+      #teachers .teacher p span small {
+        padding-right: .5rem;
+        margin-right: .5rem;
+        border-right: 1px solid #BBBBBB; }
+    #teachers .teacher p.footer {
+      margin-bottom: .5rem; }
+  #teachers .teacher a.btn {
+    width: 49%; }
 
 #profile {
   padding: 0;
@@ -5228,7 +5302,7 @@ form.indexSearch div.col-sm-2 {
     background-color: #2C3E50;
     color: #ECF0F1;
     padding: 1.2rem 2rem;
-    border-radius: 2px; }
+    border-radius: 1px; }
     #profile .signup .sections a span {
       font-size: 3rem;
       vertical-align: middle;
@@ -5301,6 +5375,8 @@ form.indexSearch div.col-sm-2 {
         background-color: #000;
         color: #ECF0F1;
         border-color: #000; }
+  #profile .signup .signupsubjects .media-heading {
+    cursor: pointer; }
   #profile .signup .signupcalendar .timeslot {
     margin-left: 0;
     margin-right: 0;
@@ -5374,5 +5450,11 @@ form.indexSearch div.col-sm-2 {
   color: #ECF0F1;
   border-color: #2C3E50;
   width: 35%; }
+
+/* ######################################## */
+@media (min-width: 34em) {
+  color: #FFF; }
+@media (max-width: 33.9em) {
+  color: #000; }
 
 /*# sourceMappingURL=style.css.map */

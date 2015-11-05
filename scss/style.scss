@@ -20,6 +20,8 @@ body {
 	font-feature-settings: 'liga';
 
 	color: $flat-purple;
+
+	outline: 0;
 }
 
 @import "navbar";
@@ -29,3 +31,5 @@ body {
 @import "teachers";
 @import "profile";
 @import "signup";
+/* ######################################## */
+@import "test";

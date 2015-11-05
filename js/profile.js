@@ -17,7 +17,8 @@ $(function () {
 		$('.signupcalendar .dates input').datepicker({
 			format: "dd/mm/yyyy",
 			clearBtn: true,
-			orientation: "bottom auto"
+			orientation: "bottom auto",
+			startDate: '0'
 		});
 	};
 
@@ -39,17 +40,38 @@ $(function () {
 			} else{
 				label.removeClass().addClass(classList[price]);
 			};
-		};
+		} else {
+			$('#signupsubjects').find('alert').show('normal');
+		}
 	});
 
-	var insertData = "<div id='hidden' style='display:none;'><div class='row'><div class='col-xs-5'><hr class='purple'></div><div class='clearfix'></div><div class='col-xs-2'><h5>Graduate College</h5></div><div class='col-xs-offset-1 col-xs-2'><fieldset class='form-group'><select class='form-control c-select'><option selected>College</option><option value='1'>IIT Delhi</option><option value='2'>IIT Roorkee</option><option value='3'>IIT Madras</option></select></fieldset></div><div class='clearfix'></div><div class='col-xs-2'><h5>Degree</h5></div><div class='col-xs-offset-1 col-xs-2'><fieldset class='form-group'><select class='form-control c-select'><option selected>Degree</option><option value='1'>B.Tech.</option><option value='2'>M.Tech.</option><option value='3'>Dual Degree</option></select></fieldset></div><div class='clearfix'></div><div class='col-xs-2'><h5>Branch</h5></div><div class='col-xs-offset-1 col-xs-2'><fieldset class='form-group'><input type='text' class='form-control'></fieldset></div><div class='clearfix'></div><div class='col-xs-2'><h5>College Verification</h5></div><div class='col-xs-3'><fieldset class='form-group'><input type='file' id='file' class='form-control'></fieldset></div></div></div>";
-	$(document).on('click','.addanothercollege a', function(event) {
-		console.log('eggg');
-		console.log(event);
+	$(document).on('click','#signupsubjects .subject label', function(event) {
+		if (!($('input[name=price]:checked').length)) {
+			$('#signupsubjects').find('div.alert-red').show('normal', function(){
+				var thisAlert = $(this);
+				function hideAlert(){
+					thisAlert.hide('slow');
+				}
+				window.setTimeout(hideAlert, 3000);
+			});
+		}
+	})
+
+	var insertData = "<div id='hidden' style='display:none;'><div class='row added'><div class='col-xs-5'><hr class='purple'></div><div class='clearfix'></div><div class='col-xs-2'><h5>Graduate College</h5></div><div class='col-xs-offset-1 col-xs-2'><fieldset class='form-group'><select class='form-control c-select'><option selected>College</option><option value='1'>IIT Delhi</option><option value='2'>IIT Roorkee</option><option value='3'>IIT Madras</option></select></fieldset></div><div class='clearfix'></div><div class='col-xs-2'><h5>Degree</h5></div><div class='col-xs-offset-1 col-xs-2'><fieldset class='form-group'><select class='form-control c-select'><option selected>Degree</option><option value='1'>B.Tech.</option><option value='2'>M.Tech.</option><option value='3'>Dual Degree</option></select></fieldset></div><div class='clearfix'></div><div class='col-xs-2'><h5>Branch</h5></div><div class='col-xs-offset-1 col-xs-2'><fieldset class='form-group'><input type='text' class='form-control'></fieldset></div><div class='clearfix'></div><div class='col-xs-2'><h5>College Verification</h5></div><div class='col-xs-3'><fieldset class='form-group'><input type='file' id='file' class='form-control'></fieldset></div></div></div>";
+	$(document).on('click','.addanothercollege a.add', function(event) {
 		$(insertData).insertBefore('.addanothercollege');
 		$('#hidden').slideDown(600, 'swing', function() {
 			$(this).find('.row').unwrap();
 		})
+		$('.addanothercollege a.remove').show();
 	});
-
+	$(document).on('click','.addanothercollege a.remove', function(event) {
+		var target = $('.addanothercollege').prev('div.added');
+		target.slideUp('slow', function(){
+			target.remove();
+			if (!($('div.added').length)) {
+				$('.addanothercollege a.remove').hide();
+			};
+		});
+	})
 })

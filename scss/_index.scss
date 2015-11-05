@@ -1,8 +1,41 @@
 .banner{
-	font-family: 	$font-light;
-	color: 			$flat-purple;
-	font-size: 		4rem;
-	text-align: 	center;
+	p{
+		font-family: 	$font-light;
+		color: 			$flat-purple;
+		font-size: 		4rem;
+		text-align: 	center;
+	}
+	form{
+		div.col-sm-8{
+			padding-right: 0;
+			small{
+				font-size: .8rem;
+			}
+		}
+		div.col-sm-4{
+			padding-left: 0;
+			.checkbox{
+				font-size: .75rem;
+				.c-input + .c-input{
+					margin-left: .3rem; 
+				}
+			}
+		}
+	}
+	@include media-breakpoint-down(xs){
+		p{
+			font-size: 2rem;
+			font-family: $font-regular;
+			font-weight: normal;
+			margin-top: 1rem;
+		}
+		.gutter-md{
+			height: 2rem;
+		}
+		.c-input + .c-input {
+			margin-left: 3rem;
+		}
+	}
 }
 
 form.indexSearch{
@@ -14,8 +47,13 @@ form.indexSearch{
 		.checkbox{
 			font-size: .8rem;
 			.c-input + .c-input{
-				margin-left: 0;
+				margin-left: 0; 
 			}
+		}
+	}
+	@include media-breakpoint-down(xs){
+		label.c-input {
+			margin-left: 1rem;
 		}
 	}
 }
@@ -32,6 +70,11 @@ form.indexSearch{
 	}
 	p{
 		font-size: .9rem;
+	}
+	@include media-breakpoint-down(xs){
+		h1.display-3{
+			font-size: 3rem;
+		}
 	}
 }
 
@@ -61,6 +104,19 @@ form.indexSearch{
 		}
 		&:last-of-type ul{
 			border-right: none;
+		}
+	}
+	@include media-breakpoint-down(xs){
+		div{
+			font-size: 1.5rem;
+			ul{
+				border: 0;
+				li{
+					font-size: 1.2rem;
+					padding: 3px 6px;
+					margin: 0 1px;
+				}
+			}
 		}
 	}
 }

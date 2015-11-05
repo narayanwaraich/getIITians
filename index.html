@@ -50,8 +50,7 @@
 			</div>
 		</nav>
 		<div class="gutter-md"></div>
-
-
+		<!--  -->
 		<div class="modal fade" id="signup" tabindex="-1" aria-labelledby="signupLabel" aria-hidden="true">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
@@ -132,32 +131,59 @@
 					<img src="img/laptop.png" class="img-responsive">
 				</div>
 				<div class="col-sm-5">
-					1-on-1 online tuition by IITians
+					<p>1-on-1 online tuition by IITians</p>
+					<div class="gutter-md"></div>
+					<form>
+						<div class="form-group row">
+							<div class="col-sm-8">
+								<input type="text" class="form-control" id="indexSearch" placeholder="Mathematics / Electromagnetics / IITJEE">
+								<small class="text-muted hidden-xs-down">You can search for any subject , class , topic or a particular teacher</small>
+							</div>
+							<div class="col-sm-4">
+								<button type="submit" class="btn btn-primary">Search</button>
+								<div class="gutter-xs"></div>
+								<div class="checkbox">
+									<label class="c-input c-checkbox">
+										<input type="checkbox" checked><span class="c-indicator"></span> Home Tuition
+									</label>
+									<label class="c-input c-checkbox">
+										<input type="checkbox" checked><span class="c-indicator"></span> Online Tuition
+									</label>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</form>
+
+
 				</div>
 			</div>
 			<div class="gutter-md"></div>
-			<form class="indexSearch">
-				<div class="form-group row">				
-					<div class="col-sm-10">
-						<label class="sr-only" for="indexSearch">Search</label>
-						<input type="text" class="form-control" id="indexSearch" placeholder="Mathematics / Electromagnetics / IITJEE">
-						<small class="text-muted">You can search for any subject , class , topic or a particular teacher</small>
-					</div>
-					<div class="col-sm-2">
-						<button type="submit" class="btn btn-primary">Search</button>
-						<div class="gutter-xs"></div>
-						<div class="checkbox">
-							<label class="c-input c-checkbox">
-								<input type="checkbox" checked><span class="c-indicator"></span> Home Tuition
-							</label>
-							<label class="c-input c-checkbox">
-								<input type="checkbox" checked><span class="c-indicator"></span> Online Tuition
-							</label>
-						</div>
-					</div>
-				</div>
-			</form>
-			<div class="gutter-sm"></div>
+
+<!-- 			<form class="indexSearch">
+	<div class="form-group row">				
+		<div class="col-sm-10">
+			<label class="sr-only" for="indexSearch">Search</label>
+			<input type="text" class="form-control" id="indexSearch" placeholder="Mathematics / Electromagnetics / IITJEE">
+			<small class="text-muted hidden-xs-down">You can search for any subject , class , topic or a particular teacher</small>
+		</div>
+		<div class="col-sm-2">
+			<button type="submit" class="btn btn-primary">Search</button>
+			<div class="gutter-xs"></div>
+			<div class="checkbox">
+				<label class="c-input c-checkbox">
+					<input type="checkbox" checked><span class="c-indicator"></span> Home Tuition
+				</label>
+				<label class="c-input c-checkbox">
+					<input type="checkbox" checked><span class="c-indicator"></span> Online Tuition
+				</label>
+			</div>
+		</div>
+	</div>
+</form>
+ -->
+
 		</div>
 
 		<div class="jumbotron jumbotron-fluid howitworks">
@@ -212,7 +238,7 @@
 				<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 				<div class="gutter-sm"></div>
 				<div class="row">
-					<div class="col-xs-6">
+					<div class="col-xs-12 col-sm-6">
 						<div class="media">
 							<div class="media-left">
 								<i class="material-icons md-60">account_balance</i>
@@ -242,8 +268,9 @@
 								Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
 							</div>
 						</div>
+						<div class="gutter-sm"></div>
 					</div>
-					<div class="col-xs-6">
+					<div class="col-xs-12 col-sm-6">
 						<div class="media">
 							<div class="media-left">
 								<i class="material-icons md-60">trending_up</i>
@@ -357,7 +384,7 @@
 				<h1>Have a doubt ?</h1>
 				<div class="gutter-sm"></div>
 				<form class="row">
-					<div class="col-xs-4">
+					<div class="col-xs-12 col-sm-4">
 						<div class="form-group row">
 							<label for="class" class="col-sm-3 form-control-label">Class</label>
 							<div class="col-sm-9">
@@ -379,7 +406,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-xs-4">
+					<div class="col-xs-12 col-sm-4">
 						<div class="form-group row">
 							<label for="enquiry" class="col-sm-3 form-control-label">Enquiry<span class="required">&nbsp;*&nbsp;</span></label>
 							<div class="col-sm-9">
@@ -387,7 +414,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-xs-4">
+					<div class="col-xs-12 col-sm-4">
 						<div class="form-group row">
 							<label for="email" class="col-sm-3 form-control-label">Email<span class="required">&nbsp;*&nbsp;</span></label>
 							<div class="col-sm-9">
@@ -418,10 +445,10 @@
 			<hr>
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-xs-3">
+					<div class="col-xs-12 col-sm-3">
 						Copyright &copy; getIITians.com
 					</div>
-					<div class="col-xs-5">
+					<div class="col-xs-12 col-sm-5">
 						<ul>
 							<li>
 								<a href="">Home</a>
@@ -438,9 +465,12 @@
 							<li>
 								<a href="">Terms &amp; Conditions</a>
 							</li>
+							<li>
+								<a href="">Contact Us</a>
+							</li>
 						</ul>
 					</div>
-					<div class="col-xs-4">
+					<div class="col-xs-12  col-sm-4">
 						<span class="pull-right">Social icons</span>
 					</div>
 				</div>

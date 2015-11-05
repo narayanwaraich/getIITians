@@ -21,4 +21,17 @@ footer{
 			margin: 0 .5rem;
 		}
 	}
+	@include media-breakpoint-down(xs){
+		div[class*="col-sm"]{
+			margin-bottom: 1rem;
+			text-align: center;
+			font-size: .85rem;
+		}
+		ul{
+			padding-left: 0;
+			li:first-child{
+				margin-left: 0;
+			}
+		}
+	}
 }

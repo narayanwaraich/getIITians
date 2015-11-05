@@ -368,7 +368,7 @@
 			background-color: $flat-purple;
 			color: $flat-white;
 			padding: 1.2rem 2rem;
-			border-radius: 2px;
+			border-radius: 1px;
 			span{
 				font-size: 3rem;
 				vertical-align: middle;
@@ -459,6 +459,9 @@
 						border-color: #000;
 					}
 				}
+			}
+			.media-heading{
+				cursor: pointer;
 			}
 		}
 		.signupcalendar{
