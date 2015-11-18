@@ -105,7 +105,7 @@
 				}
 			}
 			tbody{
-				font-size: 1.8rem;
+				font-size: 1.5rem;
 				border-left: 1px solid $flat-purple;
 				border-top: 1px solid $flat-purple;
 				ul{
@@ -118,8 +118,9 @@
 					}
 				}
 				td{
+					width: 14.25%;
 					border: 1px solid $flat-purple;
-					padding: 1rem .5rem;
+					padding: .2rem .5rem;
 					&.free{
 						cursor: pointer;
 					}
@@ -196,7 +197,7 @@
 			}
 		}
 		button{
-			width: auto;
+			width: 32%;
 			padding: .1rem 1rem;
 			font-size: 1rem;
 		}

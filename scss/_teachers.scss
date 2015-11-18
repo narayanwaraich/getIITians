@@ -12,17 +12,28 @@
 			}
 			ul{
 				padding-left: 0;
+				vertical-align: middle;
 				li{
 					font-family: $font-medium;
 					list-style-type: none;
 					display: inline-block;
-					margin: 0 .5rem;
+					margin: 0 .1rem;
 					padding: .1rem 1rem .1rem;
 					color: $flat-white;
 					background-color: $flat-purple;
+					vertical-align: middle;
 					&:first-child{
 						margin-left: 0;
 					}
+					&:hover{
+						cursor: pointer;
+					}
+				}
+				i.material-icons{
+					vertical-align: middle;
+					background-color: $flat-purple;
+					color: $flat-white;
+					margin-right: .5rem;
 					&:hover{
 						cursor: pointer;
 					}

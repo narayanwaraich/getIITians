@@ -4910,18 +4910,27 @@ form.indexSearch div.col-sm-2 {
 #teachers section .col-sm-offset-4 a {
   font-size: .9rem; }
 #teachers section .col-sm-offset-4 ul {
-  padding-left: 0; }
+  padding-left: 0;
+  vertical-align: middle; }
   #teachers section .col-sm-offset-4 ul li {
     font-family: "robotomedium", "Helvetica Neue", Helvetica, Arial, sans-serif;
     list-style-type: none;
     display: inline-block;
-    margin: 0 .5rem;
+    margin: 0 .1rem;
     padding: .1rem 1rem .1rem;
     color: #ECF0F1;
-    background-color: #2C3E50; }
+    background-color: #2C3E50;
+    vertical-align: middle; }
     #teachers section .col-sm-offset-4 ul li:first-child {
       margin-left: 0; }
     #teachers section .col-sm-offset-4 ul li:hover {
+      cursor: pointer; }
+  #teachers section .col-sm-offset-4 ul i.material-icons {
+    vertical-align: middle;
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    margin-right: .5rem; }
+    #teachers section .col-sm-offset-4 ul i.material-icons:hover {
       cursor: pointer; }
 #teachers section h5 {
   display: inline-block; }
@@ -5088,7 +5097,7 @@ form.indexSearch div.col-sm-2 {
         #profile .schedule table thead th:first-child {
           border-left: 0; }
     #profile .schedule table tbody {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       border-left: 1px solid #2C3E50;
       border-top: 1px solid #2C3E50; }
       #profile .schedule table tbody ul {
@@ -5099,8 +5108,9 @@ form.indexSearch div.col-sm-2 {
         #profile .schedule table tbody ul li {
           list-style-type: none; }
       #profile .schedule table tbody td {
+        width: 14.25%;
         border: 1px solid #2C3E50;
-        padding: 1rem .5rem; }
+        padding: .2rem .5rem; }
         #profile .schedule table tbody td.free {
           cursor: pointer; }
         #profile .schedule table tbody td.blocked {
@@ -5151,7 +5161,7 @@ form.indexSearch div.col-sm-2 {
       color: #ECF0F1;
       font-size: 1.2rem; }
   #profile .classes button {
-    width: auto;
+    width: 32%;
     padding: .1rem 1rem;
     font-size: 1rem; }
   #profile .messages .names, #profile .messages .chat {
@@ -5451,7 +5461,7 @@ form.indexSearch div.col-sm-2 {
   border-color: #2C3E50;
   width: 35%; }
 
-/* ######################################## */
+/* ######################################### */
 @media (min-width: 34em) {
   color: #FFF; }
 @media (max-width: 33.9em) {
