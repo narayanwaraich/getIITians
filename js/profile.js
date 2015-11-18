@@ -5,22 +5,27 @@ $(function () {
 		html: true
 	})
 
-	if ($('.signuppersonal').length) {
-		$('.signuppersonal .dob input').datepicker({
-			format: "dd/mm/yyyy",
-			clearBtn: true,
-			orientation: "bottom auto"
-		});
+	if (typeof $.fn.datepicker != 'undefined') {
+		$.fn.datepicker.defaults.format = "dd-M-yyyy";
+		$.fn.datepicker.defaults.clearBtn = true;
+		$.fn.datepicker.defaults.orientation = "bottom auto";
 	};
 
-	if ($('.signupcalendar').length) {
-		$('.signupcalendar .dates input').datepicker({
-			format: "dd/mm/yyyy",
-			clearBtn: true,
-			orientation: "bottom auto",
-			startDate: '0'
-		});
+	if ($('.signuppersonal').length) {
+		$('.signuppersonal .dob input').datepicker();
 	};
+
+	
+	if ($('.signupcalendar').length) {
+		var diff = null;
+		$('#start-date').datepicker({ startDate: '0' }).on('changeDate', function(e) {
+			diff = Math.floor(( Date.parse(e.date) - Date.parse(new Date()) ) / 86400000)+1;
+			$('#end-date').datepicker('remove');
+			$('#end-date').datepicker({
+				startDate: '+'+diff+'d'
+			});
+		});
+	};	
 
 	var classList = {
 		500 : "five",

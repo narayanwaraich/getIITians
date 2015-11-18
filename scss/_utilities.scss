@@ -64,9 +64,17 @@ button:hover{
 }
 
 .popover{
+	hr{
+		margin: .2rem;
+	}
+	h5{
+		margin-left: 0;
+		font-family: $font-regular;
+	}
 	h3.popover-title{
 		background-color: $flat-purple;
 		color: $flat-white;
+		font-family: $font-medium;
 	}
 	div.popover-content{
 		background-color: $flat-white;
@@ -75,7 +83,15 @@ button:hover{
 			padding-left: 0;
 			li{
 				list-style-type: none;
+				font-family: $font-medium;
 				//border-bottom: 1px solid $white;
+			}
+		}
+		ol{
+			margin-left: 0;
+			font-family: $font-medium;
+			li{
+				list-style-type: default;
 			}
 		}
 	}
